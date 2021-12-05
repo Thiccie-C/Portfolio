@@ -1,42 +1,44 @@
 :root {
-  --primary:#b19cd9;
+  --primary:#b19cd9; /* deines primary as light purple*/
 }
 /*Start of navigation Section */
 nav {
-    background-color: darkslategray;
- height: 85px;
- display: flex;
- justify-content: space-between;
- flex-wrap: wrap;
+    background-color: darkslategray; /* Makes color Grey */
+    height: 85px; /* Makes Height 85px */
+    display: flex; /* Makes all items flex*/
+    justify-content: space-between; /* adds space inbetween all items*/
+    flex-wrap: wrap; /* Makes all items wrap*/
 }
+
 nav div h1{
-    font-size: 40px;
-    color:darkslategray;
-    position:relative;
-    top:-35px;
-    left:-5px;
+    font-size: 40px; /* Makes the font size 40px*/
+    color:darkslategray; /* Makes the color Dark Grey */
+    position:relative;/* makes item's position relative to the item it's withing*/
+    top:-35px;/* moves item up 35px*/
+    left:-5px; /* Moves item to the left 5px*/
 }
 .nav-name {
-    display: flex;
-    height: 50px;
-    width: 25%;
-    background-color: var(--primary);
-    margin-top: 15px;
-    justify-content: right;
+    display: flex;  /* makes the items withing flexible*/
+    height: 50px; /* makes the hight 50px*/
+    width: 25%; /* makes the width 25%*/
+    background-color: var(--primary); /* makes the background purple*/
+    margin-top: 15px; /* adds a margin of 15px to the top*/
+    justify-content: right; /*distributes the content on the right side*/
 }
 .nav-links a {
-    color:var(--primary);
-    border-bottom: solid var(--primary);
-    text-decoration: none;
+    color:var(--primary); /* makes items purple*/
+    border-bottom: solid var(--primary); /* adds a solid purple border to the bottom */
+    text-decoration: none; /* reestablishes text decorations as none*/
 }
 .nav-links {
-    width: 20%;
-    font-size:20px;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 10px;
+    width: 15%; /* makes the width 20% */
+    font-size:20px; /* makes the font size 20px */
+    display: flex; /* makes all items flex */
+    justify-content: space-between; /* distributes all content so it as even space between them. */
+    padding: 30px 10px; /* adds padding of 30px to top and bottom and 10px to left and right */
 }
+/*end of the navigation section*/
 img {
-    width: 10%;
-    height:5%;
+    width: 10%; /* makes the width of the image 10%*/
+    height:5%; /* makes the height of the image 5% */
 }
