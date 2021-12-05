@@ -48,23 +48,26 @@ img {
     height:5%; /* makes the height of the image 5% */
 }
 /* Start of the Hero Secgtion */
+/* applies to all with the hero class */
 .hero {
-    height: 250px;
-    background: rgb(81,0,250);
-    background: linear-gradient(90deg, rgba(81,0,250,1) 0%, rgba(177,156,217,1) 50%, rgba(255,134,0,1) 100%);
-    display: flex;
-    justify-content: right;
+    height: 250px; /* height is 250px*/
+    background: rgb(81,0,250); /*establishes the background as purple*/
+    background: linear-gradient(90deg, rgba(81,0,250,1) 0%, rgba(177,156,217,1) 50%, rgba(255,134,0,1) 100%); /* makes the background a gradient*/
+    display: flex;/* allows child elements to flex*/
+    justify-content: right; /* distrubutes the content to the right side*/
 }
+/* applies to all divs within the hero class*/
 .hero div{
-    background: var(--primary);
-    height: 50px;
-    position: relative;
-    top: 100px;
-    right:80px;
+    background: var(--primary);/* background color is purple*/
+    height: 50px;/*height is 50px*/
+    position: relative; /* makes position relative to parent eleement*/
+    top: 100px;/* adds 100px to top*/
+    right:80px; /* adds 80 px to right side*/
 }
+/*applies to all p elements in the hero class*/
 .hero p {
-    position:relative;
-    font-size: 40px;
-    top: -40px;
+    position:relative;/*makes the position relative to the parent element*/
+    font-size: 40px;/* font size is 40 px*/
+    top: -40px;/*subtracts 40 px from the top*/
 }
 /*end of hero section */
