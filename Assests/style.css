@@ -1,11 +1,16 @@
 /* applies to everything */
 :root {
   --primary:#b19cd9; /* deines primary as light purple*/
+  --secondary: darkslategray; /*defined secondary as dark grey*/
+  --contact-height: ;
+  --work-height: 1750px;
+  --about-height: 206px;
+  --website-name-font-size: 80px:
 }
 /*Start of navigation Section */
 /*applies to all nav*/
 nav {
-    background-color: darkslategray; /* Makes color Grey */
+    background-color: var(--secondary); /* Makes color Grey */
     height: 85px; /* Makes Height 85px */
     display: flex; /* Makes all items flex*/
     justify-content: space-between; /* adds space inbetween all items*/
@@ -14,7 +19,7 @@ nav {
 /* applies to all h1 within divs within nav */
 nav div h1{
     font-size: 40px; /* Makes the font size 40px*/
-    color:darkslategray; /* Makes the color Dark Grey */
+    color:var(--secondary); /* Makes the color Dark Grey */
     position:relative;/* makes item's position relative to the item it's withing*/
     top:-35px;/* moves item up 35px*/
     left:-5px; /* Moves item to the left 5px*/
@@ -44,8 +49,9 @@ nav div h1{
 
 /*end of the navigation section*/
 img {
-    width: 10%; /* makes the width of the image 10%*/
-    height:5%; /* makes the height of the image 5% */
+    float:left;
+    height: 250px;
+    width: 200px;
 }
 /* Start of the Hero Secgtion */
 /* applies to all with the hero class */
@@ -70,4 +76,103 @@ img {
     font-size: 40px;/* font size is 40 px*/
     top: -40px;/*subtracts 40 px from the top*/
 }
+
 /*end of hero section */
+/* applies to all with the section-titles class*/
+.section-titles {
+    float:left;
+    display: flex;
+    width: 20%;
+    justify-content: right;
+    padding-bottom: 30px;
+    margin-top: 2%;
+}
+/*start of body section*/
+/*applies to all h2 elements within the section-titles class*/
+.section-titles h2 {
+    font-size: 54px;
+    color:var(--secondary)
+    
+}
+/*applies to all with the section-body class*/
+.section-body {
+    display: flex;
+    border-left: solid var(--secondary);
+    float: right;
+    flex-wrap: wrap;
+    width:77%;
+    padding-bottom:30px;
+    padding-left: 2%;
+    margin-top: 2%;
+}
+/* start of about me section*/
+/*applies to all with the aboutme0body class*/
+.aboutme {
+    position: sticky;
+    height: var(--about-height);
+}
+.aboutme-body {
+    height: var(--about-height);
+    line-height: 1.5;
+}
+
+/*end of about me section*/
+/*start of work section*/
+.work-title {
+    height:var(--work-height);
+}
+.first-project{
+    height:700px;
+}
+.first-project img{
+    margin: 10px;
+    border:5px solid var(--secondary);
+    width: 97%;
+    height: 100%;
+}
+.first-project a{
+    height:100%;
+    width:100%;
+}
+
+.first-project p{
+    display: inline;
+    position:relative;
+    color:var(--primary);
+    font-size: var(--website-name-font-size);
+    left:5%;
+    bottom:15%;
+    background-color: var(--secondary);
+}
+.work-body{
+    position: relative;
+    top:10px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 750;
+    width: 100%;
+}
+.work-body a{
+    margin:1%;
+    border: 5px solid var(--secondary);
+    height: 500px;
+    width: 47%;
+}
+.work-body a img {
+    height: 95%;
+    width: 100%;
+} 
+.work-body img:hover, .first-project img:hover {
+    opacity: 50%;
+}
+.work-body p{
+    display: inline;
+    position:relative;
+    color:var(--primary);
+    font-size: var(--website-name-font-size);
+    left:5%;
+    bottom:15%;
+    background-color: var(--secondary);
+}
+
