@@ -3,7 +3,7 @@
   --primary:#b19cd9; /* deines primary as light purple*/
   --secondary: darkslategray; /*defined secondary as dark grey*/
   --contact-height: ;
-  --work-height: 1750px;
+  --work-height: 1200px;
   --about-height: 206px;
   --website-name-font-size: 80px:
 }
@@ -81,11 +81,13 @@ img {
 /* applies to all with the section-titles class*/
 .section-titles {
     float:left;
+    text-align: right;
     display: flex;
     width: 20%;
     justify-content: right;
     padding-bottom: 30px;
     margin-top: 2%;
+    font-size: 15px;
 }
 /*start of body section*/
 /*applies to all h2 elements within the section-titles class*/
@@ -103,7 +105,7 @@ img {
     width:77%;
     padding-bottom:30px;
     padding-left: 2%;
-    margin-top: 2%;
+    margin-top: 2%;;
 }
 /* start of about me section*/
 /*applies to all with the aboutme0body class*/
@@ -115,7 +117,6 @@ img {
     height: var(--about-height);
     line-height: 1.5;
 }
-
 /*end of about me section*/
 /*start of work section*/
 .work-title {
@@ -175,4 +176,17 @@ img {
     bottom:15%;
     background-color: var(--secondary);
 }
-
+/* end of work section*/
+/*begining of contact/footer section*/
+.contact-body {
+    justify-content: space-evenly;
+    width: 77%;
+    text-decoration: underline;
+    height: 100%;
+}
+.contact-body a{
+    position: relative;
+    top: 15px
+}
+/*end of contact/footer section*/
+/*end of body section*/
