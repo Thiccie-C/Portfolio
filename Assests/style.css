@@ -2,10 +2,9 @@
 :root {
   --primary:#b19cd9; /* deines primary as light purple*/
   --secondary: darkslategray; /*defined secondary as dark grey*/
-  --contact-height: ;
-  --work-height: 1200px;
-  --about-height: 206px;
-  --website-name-font-size: 80px:
+  --work-height: 1200px; /*defines work-height as 1200 px*/
+  --about-height: 206px; /*defines about-height as 206px*/
+  --work-website-font-size: 25px/*defines work-website-font-size as 25px*/
 }
 /*Start of navigation Section */
 /*applies to all nav*/
@@ -76,117 +75,179 @@ img {
     font-size: 40px;/* font size is 40 px*/
     top: -40px;/*subtracts 40 px from the top*/
 }
-
 /*end of hero section */
 /* applies to all with the section-titles class*/
 .section-titles {
-    float:left;
-    text-align: right;
-    display: flex;
-    width: 20%;
-    justify-content: right;
-    padding-bottom: 30px;
-    margin-top: 2%;
-    font-size: 15px;
+    float:left; /* all items prefer to be on the left side*/
+    text-align: right;/*alligns text to the right side*/
+    display: flex; /*allows items to display ina  flex format*/
+    width: 20%; /* width is 20%*/
+    justify-content: right; /*all items are pushed to the right*/
+    padding-bottom: 30px; /*adds a padding of 30px*/
+    margin-top: 2%; /* adds a padding of 2%*/
+    font-size: 15px; /*adds a font-size of 15px*/
 }
 /*start of body section*/
 /*applies to all h2 elements within the section-titles class*/
 .section-titles h2 {
-    font-size: 54px;
-    color:var(--secondary)
+    font-size: 54px;/* makes font 54px*/
+    color:var(--secondary) /* color is grey*/
     
 }
 /*applies to all with the section-body class*/
 .section-body {
-    display: flex;
-    border-left: solid var(--secondary);
-    float: right;
-    flex-wrap: wrap;
-    width:77%;
-    padding-bottom:30px;
-    padding-left: 2%;
-    margin-top: 2%;;
+    display: flex;/* allows item to display in flex format*/
+    border-left: solid var(--secondary); /*defines border as solid and grey on the left side*/
+    float: right; /* items prefer to be on the right*/
+    flex-wrap: wrap; /* allows flex items to wrap*/
+    width:77%; /*width is 77%*/
+    padding-bottom:30px; /*padding bottom is 30px*/
+    padding-left: 2%; /*padding left is 2%*/
+    margin-top: 2%; /* margin top is 2%*/
 }
 /* start of about me section*/
 /*applies to all with the aboutme0body class*/
 .aboutme {
-    position: sticky;
-    height: var(--about-height);
+    height: var(--about-height); /* defines height as 206px */
 }
+/*applies to all aboutme-body class*/
 .aboutme-body {
-    height: var(--about-height);
-    line-height: 1.5;
+    height: var(--about-height); /*defines height as 206px*/
+    line-height: 1.5; /*adds spacing of 1.5*/
 }
 /*end of about me section*/
 /*start of work section*/
+/*applies to all work-title class*/
 .work-title {
-    height:var(--work-height);
+    height:var(--work-height); /*defines height as 1200*/
+}
+/*applies to all project-class*/
+.first-project{
+    height:700px; /*defines height as 700px*/
+}
+/*applies to all img withing first-project class */
+.first-project img{
+    margin: 10px;/* defines margin 10px*/
+    border:5px solid var(--secondary);/*adds a solid grey 5px border*/
+    width: 97%;/* defineswidth as 97%*/
+    height: 100%; /* definesheight as 100%*/
+}
+/*applies to all a elements withing first-project class*/
+.first-project a{
+    height:100%; /* defines height as 100%*/
+    width:100%;/*defines width as 100%*/
+}
+/* applies to all p elemenets within the first-projectclass*/
+.first-project p{
+    display: inline; /* displays all items in a line*/
+    position:relative; /* item's position is relative to paretn*/
+    color:var(--primary); /* defines color as purple*/
+    font-size: var(--work-website-font-size);/* defines font size as 26px*/
+    left:5%;/* adds 5% to the left side*/
+    bottom:15%;/* adds 15% to the bottom*/
+    background-color: var(--secondary);/* makes the background grey*/
+}
+/*applies to all work-body class*/
+.work-body{
+    position: relative; /* items are relative to their parent*/
+    top:10px; /* adds 10px to the top*/
+    display:flex; /* allows items to flex*/
+    justify-content: center; /* pushes items to the center*/
+    flex-wrap: wrap; /* allows flex items to wrap*/
+    height: 750; /* defines height as 750 */
+    width: 100%; /*width is 100%*/
+}
+/*applies to all a elements withn work-body class*/
+.work-body a{
+    margin:1%; /* adds a 1% margin*/
+    border: 5px solid var(--secondary); /* adds a 5px solid grey border*/
+    height: 500px;/* defines height as 500px*/
+    width: 47%;/* defines width as 47%*/
+}
+/* applies ao all img within a elements withing work-buddy class*/
+.work-body a img {
+    height: 95%;/* defines height as 95%*/
+    width: 100%;/* defines width as 100%*/
+} 
+/* applies when you hover over either an im withing work-buddy class or first-project class*/
+.work-body img:hover, .first-project img:hover {
+    opacity: 50%; /* makes item 50% see through*/
+}
+/*applies to all p elements withing work-body class*/
+.work-body p{
+    display: inline; /* allows items to display in a line*/
+    position:relative; /* items are positioned relative to their parent*/
+    color:var(--primary);/* color is purple*/
+    font-size: var(--work-website-font-size); /* font size is 26px*/
+    left:5%; /*adds 5% to the left side*/
+    bottom:15%;/* adds 15% to the bottom*/
+    background-color: var(--secondary);/* makes background grey*/
+}
+/* end of work section*/
+/*begining of contact/footer section*/
+/*applies to all contact-body class*/
+.contact-body {
+    justify-content: space-evenly; /* allows all to have even space between them*/
+    width: 77%;/* defines width as 77%*/
+    text-decoration: underline; /* adds an underline to text*/
+    height: 100%; /* defines height as 100%*/
+}
+/*applies to all a elements within the contact body*/
+.contact-body a{
+    position: relative; /* position is relative to parent*/
+    top: 15px /* adds 15px to top*/
+}
+/*end of contact/footer section*/
+/*end of body section*/
+/* changes the dimensions of noted classes when width is below 1359px*/
+@media screen and (max-width: 1359px) {
+.work-body a{
+    margin:1.5%;
+    border: 5px solid var(--secondary);
+    height: 250px;
+    width: 45%;
 }
 .first-project{
-    height:700px;
+    height:400px;
+}
+.first-project a{
+    height:25%;
+    width:25%;
+}
+.work-title {
+    height: 625px;
+}
+.contact-body{
+    height: 240;    
 }
 .first-project img{
     margin: 10px;
     border:5px solid var(--secondary);
-    width: 97%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
+}
+}
+/*changes to new definitions for all items mentioned at 600px or less*/
+@media screen and (max-width: 600px) {
+:root {
+    --primary:#b19cd9; /* deines primary as light purple*/
+    --secondary: darkslategray; /*defined secondary as dark grey*/
+    --contact-height: ;
+    --work-height: 700px;
+    --about-height: 103px;
+    --work-website-font-size: 13px
+      }
+.first-project img{
+    margin: 10px;
+    border:5px solid var(--secondary);
+    width: 75%;
+    height: 60%;
+}
+.first-project{
+    height:200px;
 }
 .first-project a{
-    height:100%;
-    width:100%;
+    height:25%;
+    width:25%;
 }
-
-.first-project p{
-    display: inline;
-    position:relative;
-    color:var(--primary);
-    font-size: var(--website-name-font-size);
-    left:5%;
-    bottom:15%;
-    background-color: var(--secondary);
 }
-.work-body{
-    position: relative;
-    top:10px;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 750;
-    width: 100%;
-}
-.work-body a{
-    margin:1%;
-    border: 5px solid var(--secondary);
-    height: 500px;
-    width: 47%;
-}
-.work-body a img {
-    height: 95%;
-    width: 100%;
-} 
-.work-body img:hover, .first-project img:hover {
-    opacity: 50%;
-}
-.work-body p{
-    display: inline;
-    position:relative;
-    color:var(--primary);
-    font-size: var(--website-name-font-size);
-    left:5%;
-    bottom:15%;
-    background-color: var(--secondary);
-}
-/* end of work section*/
-/*begining of contact/footer section*/
-.contact-body {
-    justify-content: space-evenly;
-    width: 77%;
-    text-decoration: underline;
-    height: 100%;
-}
-.contact-body a{
-    position: relative;
-    top: 15px
-}
-/*end of contact/footer section*/
-/*end of body section*/
