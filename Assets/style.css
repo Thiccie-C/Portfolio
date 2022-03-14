@@ -1,0 +1,253 @@
+/* applies to everything */
+:root {
+  --primary:#b19cd9; /* deines primary as light purple*/
+  --secondary: darkslategray; /*defined secondary as dark grey*/
+  --work-height: 1200px; /*defines work-height as 1200 px*/
+  --about-height: 206px; /*defines about-height as 206px*/
+  --work-website-font-size: 25px/*defines work-website-font-size as 25px*/
+}
+/*Start of navigation Section */
+/*applies to all nav*/
+nav {
+    background-color: var(--secondary); /* Makes color Grey */
+    height: 85px; /* Makes Height 85px */
+    display: flex; /* Makes all items flex*/
+    justify-content: space-between; /* adds space inbetween all items*/
+    flex-wrap: wrap; /* Makes all items wrap*/
+}
+/* applies to all h1 within divs within nav */
+nav div h1{
+    font-size: 40px; /* Makes the font size 40px*/
+    color:var(--secondary); /* Makes the color Dark Grey */
+    position:relative;/* makes item's position relative to the item it's withing*/
+    top:-35px;/* moves item up 35px*/
+    left:-5px; /* Moves item to the left 5px*/
+}
+/*applies to all with the nav-name class*/
+.nav-name {
+    display: flex;  /* makes the items withing flexible*/
+    height: 50px; /* makes the hight 50px*/
+    width: 325px; /* makes the width 25%*/
+    background-color: var(--primary); /* makes the background purple*/
+    margin-top: 15px; /* adds a margin of 15px to the top*/
+    justify-content: right; /*distributes the content on the right side*/
+}
+/* applies to all with the class nav-links*/
+.nav-links {
+    width: 300px; /* makes the width 20% */
+    font-size:20px; /* makes the font size 20px */
+    justify-content: space-between; /* distributes all content so it as even space between them. */
+    padding: 30px 10px; /* adds padding of 30px to top and bottom and 10px to left and right */
+}
+/*applies to all a withing the nav-links class*/
+.nav-links a {
+    color:var(--primary); /* makes items purple*/
+    border-bottom: solid var(--primary); /* adds a solid purple border to the bottom */
+    text-decoration: none; /* reestablishes text decorations as none*/
+}
+
+/*end of the navigation section*/
+img {
+    float:left;
+    height: 250px;
+    width: 200px;
+}
+/* Start of the Hero Secgtion */
+/* applies to all with the hero class */
+.hero {
+    height: 250px; /* height is 250px*/
+    background: rgb(81,0,250); /*establishes the background as purple*/
+    background: linear-gradient(90deg, rgba(81,0,250,1) 0%, rgba(177,156,217,1) 50%, rgba(255,134,0,1) 100%); /* makes the background a gradient*/
+    display: flex;/* allows child elements to flex*/
+    justify-content: right; /* distrubutes the content to the right side*/
+}
+/* applies to all divs within the hero class*/
+.hero div{
+    background: var(--primary);/* background color is purple*/
+    height: 50px;/*height is 50px*/
+    position: relative; /* makes position relative to parent eleement*/
+    top: 100px;/* adds 100px to top*/
+    right:80px; /* adds 80 px to right side*/
+}
+/*applies to all p elements in the hero class*/
+.hero p {
+    position:relative;/*makes the position relative to the parent element*/
+    font-size: 40px;/* font size is 40 px*/
+    top: -40px;/*subtracts 40 px from the top*/
+}
+/*end of hero section */
+/* applies to all with the section-titles class*/
+.section-titles {
+    float:left; /* all items prefer to be on the left side*/
+    text-align: right;/*alligns text to the right side*/
+    display: flex; /*allows items to display ina  flex format*/
+    width: 20%; /* width is 20%*/
+    justify-content: right; /*all items are pushed to the right*/
+    padding-bottom: 30px; /*adds a padding of 30px*/
+    margin-top: 2%; /* adds a padding of 2%*/
+    font-size: 15px; /*adds a font-size of 15px*/
+}
+/*start of body section*/
+/*applies to all h2 elements within the section-titles class*/
+.section-titles h2 {
+    font-size: 54px;/* makes font 54px*/
+    color:var(--secondary) /* color is grey*/
+    
+}
+/*applies to all with the section-body class*/
+.section-body {
+    display: flex;/* allows item to display in flex format*/
+    border-left: solid var(--secondary); /*defines border as solid and grey on the left side*/
+    float: right; /* items prefer to be on the right*/
+    flex-wrap: wrap; /* allows flex items to wrap*/
+    width:77%; /*width is 77%*/
+    padding-bottom:30px; /*padding bottom is 30px*/
+    padding-left: 2%; /*padding left is 2%*/
+    margin-top: 2%; /* margin top is 2%*/
+}
+/* start of about me section*/
+/*applies to all with the aboutme0body class*/
+.aboutme {
+    height: var(--about-height); /* defines height as 206px */
+}
+/*applies to all aboutme-body class*/
+.aboutme-body {
+    height: var(--about-height); /*defines height as 206px*/
+    line-height: 1.5; /*adds spacing of 1.5*/
+}
+/*end of about me section*/
+/*start of work section*/
+/*applies to all work-title class*/
+.work-title {
+    height:var(--work-height); /*defines height as 1200*/
+}
+/*applies to all project-class*/
+.first-project{
+    height:700px; /*defines height as 700px*/
+}
+/*applies to all img withing first-project class */
+.first-project img{
+    margin: 10px;/* defines margin 10px*/
+    border:5px solid var(--secondary);/*adds a solid grey 5px border*/
+    width: 97%;/* defineswidth as 97%*/
+    height: 100%; /* definesheight as 100%*/
+}
+/*applies to all a elements withing first-project class*/
+.first-project a{
+    height:100%; /* defines height as 100%*/
+    width:100%;/*defines width as 100%*/
+}
+/* applies to all p elemenets within the first-projectclass*/
+.first-project p{
+    display: inline; /* displays all items in a line*/
+    position:relative; /* item's position is relative to paretn*/
+    color:var(--primary); /* defines color as purple*/
+    font-size: var(--work-website-font-size);/* defines font size as 26px*/
+    left:5%;/* adds 5% to the left side*/
+    bottom:15%;/* adds 15% to the bottom*/
+    background-color: var(--secondary);/* makes the background grey*/
+}
+/*applies to all work-body class*/
+.work-body{
+    position: relative; /* items are relative to their parent*/
+    top:10px; /* adds 10px to the top*/
+    display:flex; /* allows items to flex*/
+    justify-content: center; /* pushes items to the center*/
+    flex-wrap: wrap; /* allows flex items to wrap*/
+    height: 750; /* defines height as 750 */
+    width: 100%; /*width is 100%*/
+}
+/*applies to all a elements withn work-body class*/
+.work-body a{
+    margin:1%; /* adds a 1% margin*/
+    border: 5px solid var(--secondary); /* adds a 5px solid grey border*/
+    height: 500px;/* defines height as 500px*/
+    width: 47%;/* defines width as 47%*/
+}
+/* applies ao all img within a elements withing work-buddy class*/
+.work-body a img {
+    height: 95%;/* defines height as 95%*/
+    width: 100%;/* defines width as 100%*/
+} 
+/* applies when you hover over either an im withing work-buddy class or first-project class*/
+.work-body img:hover, .first-project img:hover {
+    opacity: 50%; /* makes item 50% see through*/
+}
+/*applies to all p elements withing work-body class*/
+.work-body p{
+    display: inline; /* allows items to display in a line*/
+    position:relative; /* items are positioned relative to their parent*/
+    color:var(--primary);/* color is purple*/
+    font-size: var(--work-website-font-size); /* font size is 26px*/
+    left:5%; /*adds 5% to the left side*/
+    bottom:15%;/* adds 15% to the bottom*/
+    background-color: var(--secondary);/* makes background grey*/
+}
+/* end of work section*/
+/*begining of contact/footer section*/
+/*applies to all contact-body class*/
+.contact-body {
+    justify-content: space-evenly; /* allows all to have even space between them*/
+    width: 77%;/* defines width as 77%*/
+    text-decoration: underline; /* adds an underline to text*/
+    height: 100%; /* defines height as 100%*/
+}
+/*applies to all a elements within the contact body*/
+.contact-body a{
+    position: relative; /* position is relative to parent*/
+    top: 15px /* adds 15px to top*/
+}
+/*end of contact/footer section*/
+/*end of body section*/
+/* changes the dimensions of noted classes when width is below 1359px*/
+@media screen and (max-width: 1359px) {
+.work-body a{
+    margin:1.5%;
+    border: 5px solid var(--secondary);
+    height: 250px;
+    width: 45%;
+}
+.first-project{
+    height:400px;
+}
+.first-project a{
+    height:25%;
+    width:25%;
+}
+.work-title {
+    height: 625px;
+}
+.contact-body{
+    height: 240;    
+}
+.first-project img{
+    margin: 10px;
+    border:5px solid var(--secondary);
+    width: 95%;
+    height: 95%;
+}
+}
+/*changes to new definitions for all items mentioned at 600px or less*/
+@media screen and (max-width: 600px) {
+:root {
+    --primary:#b19cd9; /* deines primary as light purple*/
+    --secondary: darkslategray; /*defined secondary as dark grey*/
+    --contact-height: ;
+    --work-height: 700px;
+    --about-height: 103px;
+    --work-website-font-size: 13px
+      }
+.first-project img{
+    margin: 10px;
+    border:5px solid var(--secondary);
+    width: 75%;
+    height: 60%;
+}
+.first-project{
+    height:200px;
+}
+.first-project a{
+    height:25%;
+    width:25%;
+}
+}
